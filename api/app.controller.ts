@@ -4,10 +4,10 @@ import { AppService } from "./app.service";
 @Controller()
 @Dependencies(AppService)
 export class AppController {
-    constructor(private readonly appService: AppService) {}
+  constructor(private readonly appService: AppService) {}
 
-    @Get("hello")
-    getHello() {
-        return this.appService.getHello();
-    }
+  @Get("hello")
+  getHello() {
+    return this.appService.getHello();
+  }
 }
